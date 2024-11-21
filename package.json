@@ -6,7 +6,7 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "postinstall": "npm rebuild better-sqlite3",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "apt-get update && apt-get install -y build-essential libsqlite3-dev"
   },
   "keywords": [],
@@ -14,12 +14,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "bindings": "^1.5.0",
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "nodemon": "^3.1.7",
     "path": "^0.12.7",
     "sqlite": "^5.1.1",
-    "sqlite3": "^5.1.7",
+    "sqlite3": "^5.0.0",
     "uuid": "^11.0.3"
   },
   "engines": {
