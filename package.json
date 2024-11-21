@@ -1,10 +1,10 @@
 {
   "name": "project---backend",
   "version": "1.0.0",
-  "main": "app.js",  // Ensure this points to app.js
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js",  // Run app.js on start
-    "dev": "nodemon app.js", // Use nodemon for development
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "postinstall": "npm rebuild sqlite3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
