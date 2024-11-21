@@ -5,9 +5,8 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "postinstall": "npm rebuild better-sqlite3",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "apt-get update && apt-get install -y build-essential libsqlite3-dev"
+    "postinstall": "npm rebuild sqlite3 && npm install --build-from-source",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
