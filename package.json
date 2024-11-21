@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "postinstall": "npm rebuild sqlite3 && npm install --build-from-source",
+    "postinstall": "npm rebuild sqlite3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,16 +13,15 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "bindings": "^1.5.0",
+    "axios": "^1.7.7",
     "cors": "^2.8.5",
     "express": "^4.21.1",
     "nodemon": "^3.1.7",
     "path": "^0.12.7",
     "sqlite": "^5.1.1",
-    "sqlite3": "^5.0.0",
-    "uuid": "^11.0.3"
+    "sqlite3": "^5.1.7"
   },
   "engines": {
-    "node": "18.x"
+    "node": ">=14.x <20.x"
   }
 }
