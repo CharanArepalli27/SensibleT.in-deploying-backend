@@ -1,0 +1,30 @@
+GET http://localhost:3000/api/transactions
+###
+
+DELETE http://localhost:3000/api/transactions/4afe932a-60e3-4767-aac7-619732cf2a08
+###
+
+POST http://localhost:3000/api/transactions
+Content-Type: application/json
+
+{
+    "amount" : "677",
+    "transaction_type" : "DEPOSIT",
+    "user_id" : 4
+}
+###
+
+GET http://localhost:3000/api/transactions/23f784e6-9ce4-44b6-84b8-9335327e5a8c
+Content-Type: application/json
+###
+
+GET http://localhost:3000/api/transactions/user/1
+Content-Type: application/json
+###
+
+PUT http://localhost:3000/api/transactions/23f784e6-9ce4-44b6-84b8-9335327e5a8c
+Content-Type: application/json
+
+{
+    "status" : "COMPLETED"
+}
